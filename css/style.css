@@ -15,6 +15,31 @@ body {
   background-color: var(--page-background-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
 .list {
   list-style: none;
 }
@@ -36,6 +61,13 @@ body {
   color: var(--accent-color);
 }
 /* ------------------HEADER-------------------- */
+
+.header {
+  padding-top: 14px;
+  padding-bottom: 15px;
+  background-color: skyblue;
+}
+
 .header-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -75,6 +107,8 @@ body {
 /* ------------------AFTER-HEADER-------------------- */
 .after-header {
   background-color: var(--primary-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .visually-hidden {
@@ -94,17 +128,22 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 700px;
 }
 
 .after-header-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--btn-color);
+  margin-top: 30px;
 }
 
 .after-header-btn-background {
@@ -118,6 +157,12 @@ body {
 }
 
 /* ------------------ABOUT-------------------- */
+
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: skyblue;
+}
 
 .about-item {
   font-weight: 700;
@@ -133,19 +178,29 @@ body {
   letter-spacing: 0.03em;
   text-transform: none;
   color: var(--list-text-color);
+  margin-top: 10px;
 }
 
 /* ------------------HERO-------------------- */
+
+.hero {
+  padding-bottom: 94px;
+  background-color: var(--primary-background-color);
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* ------------------TEAM-------------------- */
 .team {
   background-color: var(--secondary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-item {
@@ -157,6 +212,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team-item-title {
@@ -176,6 +232,8 @@ body {
 /* ------------------FOOTER-------------------- */
 .footer {
   background-color: var(--primary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-list {
