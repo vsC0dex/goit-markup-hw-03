@@ -69,6 +69,21 @@ p {
 }
 
 .header-logo {
+  margin-right: 93px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 331px;
+}
+
+.header-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -78,12 +93,28 @@ p {
   color: #000000;
 }
 
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+
+.header-list-links {
+  display: flex;
+}
+
+.header-mail {
+  margin-right: 50px;
 }
 
 .header-tel-link,
